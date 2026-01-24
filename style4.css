@@ -283,3 +283,64 @@ footer .container {
         width: 100%;
     }
 }
+/* ===================== Booking Buttons ===================== */
+.booking-btn {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 5px 5px 0;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.booking-btn img {
+    height: 22px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Brand colors */
+.booking-com { background-color: #003580; }
+.booking-com:hover { background-color: #001f4d; transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 10px rgba(0,0,0,0.25); }
+
+.trip-com { background-color: #ff6600; }
+.trip-com:hover { background-color: #cc5200; transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 10px rgba(0,0,0,0.25); }
+
+.expedia-com { background-color: #ffcc00; color: #000; }
+.expedia-com:hover { background-color: #e6b800; transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 10px rgba(0,0,0,0.25); }
+
+/* Responsive buttons */
+@media screen and (max-width: 600px) {
+    .tips-list li { display: flex; flex-direction: column; align-items: flex-start; }
+    .booking-btn { width: 100%; justify-content: center; margin-bottom: 10px; }
+}
+
+.ocean {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #cce7ff;
+    border-radius: 12px;
+    margin: 40px auto;
+}
+
+@keyframes swim {
+  0%   { left: -220px; top: 50px; }
+  25%  { top: 45px; }
+  50%  { left: 50%; top: 50px; }
+  75%  { top: 55px; }
+  100% { left: 100%; top: 50px; }
+}
+.dolphin {
+  position: absolute;
+  width: 120px; /* was 200px */
+  height: 60px; /* was 100px */
+  left: -140px;
+  top: 50px;
+  animation: swim 8s linear infinite;
+}
